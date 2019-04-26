@@ -1,1 +1,0 @@
-# uni7-loja-virtual
