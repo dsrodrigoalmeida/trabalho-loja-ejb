@@ -1,5 +1,5 @@
 FROM adoptopenjdk/openjdk11:alpine as build
-WORKDIR /workspace/
+WORKDIR /home/rodrigo/trabalho-loja-ejb/
 
 
 COPY mvnw .
@@ -8,17 +8,17 @@ COPY pom.xml .
 COPY ear ear
 COPY ejb ejb
 COPY web web
-# COPY src src
+
 
 RUN ./mvnw install -DskipTests
-# RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.war)
+
 
 FROM michelav/wildfly-alpine
 
-WORKDIR /opt/wildfly/standalone/deployments/app-web/
+WORKDIR /home/rodrigo/Application Servers/wildfly15/standalone/deployments/ear-1.0.ear
 
-ARG DEPENDENCY=/workspace
+ARG DEPENDENCY=/home/rodrigo/trabalho-loja-ejb
 
 COPY --from=build ${DEPENDENCY}/ear/target/ear-1.0.ear .
 
-CMD ["/opt/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
+CMD ["/home/rodrigo/Application Servers/wildfly15/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
