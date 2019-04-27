@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Java Standard Taglib</title>
+<title>Estoque</title>
 </head>
 <body>
 
@@ -25,6 +25,8 @@
 				</tr>
 			</c:forEach>
 		</table>
+		<br>
+	 <a href="${pageContext.request.contextPath}/index.jsp">Voltar para a pagina inicial</a>
 
 </body>
 </html>

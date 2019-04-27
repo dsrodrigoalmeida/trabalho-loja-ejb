@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Obrigado!</title>
 </head>
 <body>
 <p><font size="12">Compra finalizada com sucesso! Obrigado por comprar com a gente! </font></p>

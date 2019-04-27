@@ -34,7 +34,7 @@
 		<input type=submit name="submit" value="Remover">
 		
 	</form>
-	
+	<br>
 	 <a href="${pageContext.request.contextPath}/index.jsp">Voltar para a pagina inicial</a>
 </body>
 </html>
