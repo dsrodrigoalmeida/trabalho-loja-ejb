@@ -3,8 +3,6 @@ package br.com.rodrigoale.negocio.biz.model;
 public class Carrinho {
 	private Produto produto;
 	private int qtdCarrinho;
-	private double subtotal;
-
 	public Carrinho(Produto produto, int qtdCarrinho) {
 		this.produto = produto;
 		this.qtdCarrinho = qtdCarrinho;

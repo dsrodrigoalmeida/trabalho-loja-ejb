@@ -19,20 +19,21 @@
 			<option value=2>Senhor dos Aneis - 108R$
 			<option value=3>Hobbit - 38R$
 			<option value=4>O Nome do Vento - 42R$
-			<option value=5>The Legend of Zelda: Breath of the
-				Wild-Creating a Champion - 133 R$
-			<option value=6>Box As Cronicas de Gelo e Fogo - 180 R$
-			<option value=7>The Legend of Zelda: Hyrule Historia - 113
-				R$
-			<option value=8>Fogo E Sangue - Volume 1 - 56 R$
-			<option value=9>Trilogia dos Espinhos - 81 R$
+			<option value=5>The Legend of Zelda - Breath of the
+				Wild - Creating a Champion - 133R$
+			<option value=6>Box As Cronicas de Gelo e Fogo - 180R$
+			<option value=7>The Legend of Zelda - Hyrule Historia - 113R$
+			<option value=8>Fogo E Sangue - Volume 1 - 56R$
+			<option value=9>Trilogia dos Espinhos - 81R$
 		</select> <input type="text" name="qtd" /> <br> <br> <br> <input
-			type=submit name="submit" value="Adicionar"> <input
+			type=submit name="submit" value="Adicionar">
+		<input
 			type=submit name="submit" value="Finalizar">
+	
 	</form>
+	
 	<form method=get action="${pageContext.request.contextPath}/estoque">
 		<input type=submit name="submit" value="Listar Estoque ">
-
 	</form>
 </body>
 </html>

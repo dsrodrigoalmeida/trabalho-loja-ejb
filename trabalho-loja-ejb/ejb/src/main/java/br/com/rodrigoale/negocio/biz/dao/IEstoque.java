@@ -6,6 +6,6 @@ public interface IEstoque {
 	
 
 	public List<Estoque> listaEstoque();
-	
+
 
 }

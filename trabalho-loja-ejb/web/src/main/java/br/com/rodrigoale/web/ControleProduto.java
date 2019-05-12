@@ -21,4 +21,13 @@ public class ControleProduto implements Serializable {
 	public List<Estoque> listar() {
 		return bean.listarEstoque();
 	}
+	
+	public void alterarEstoque (int id, int qtd) {
+		bean.aumentarEstoque(id, qtd);
+	}
+	
+	public Estoque selecionarProdutoDoEstoque(int id) {
+		
+		return bean.selecionarProdutoDoEstoque(id);
+	}
 }

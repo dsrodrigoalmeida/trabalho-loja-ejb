@@ -29,6 +29,9 @@ public class ControleCompras implements Serializable {
 		bean.removerProdutoCarrinho(id);
 		
 	}
+	public void limparCarrinho() {
+		bean.limparCarrinho();
+	}
 	
 	
 }

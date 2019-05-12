@@ -17,4 +17,15 @@ public class EstoqueBean {
 		return info.listaEstoque();
 
 	}
+
+	public void aumentarEstoque(int id, int qtd) {
+		info.alterarEstoque(id, qtd);
+		
+	}
+	
+	
+
+	public Estoque selecionarProdutoDoEstoque(int id) {
+		return info.selecionarProdutoDoEstoque(id);
+	}
 }

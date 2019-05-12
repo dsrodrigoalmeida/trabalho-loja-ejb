@@ -27,4 +27,9 @@ public class CarrinhoBean {
 		return itens.getCarrinho();
 	}
 
+	public void limparCarrinho() {
+		itens.limparCarrinho();
+		
+	}
+
 }
