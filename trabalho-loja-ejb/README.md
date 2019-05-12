@@ -4,7 +4,7 @@ Os pre requisitos do sistema :
 
 Java 11
 Maven
-Wildfly 15
+Wildfly 16
 
 O context root do projeto é /loja
 
