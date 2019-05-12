@@ -22,3 +22,14 @@ ARG DEPENDENCY=/home/rodrigo/trabalho-loja-ejb
 COPY --from=build ${DEPENDENCY}/ear/target/ear-1.0.ear .
 
 CMD ["/home/rodrigo/Application Servers/wildfly15/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
+
+
+FROM michelav/wildfly-alpine
+
+WORKDIR /home/rodrigo/Application Servers/wildfly16/standalone/deployments/ear-reposicao-1.0.ear
+
+ARG DEPENDENCY=/home/rodrigo/trabalho-loja-ejb
+
+COPY --from=build ${DEPENDENCY}/ear/target/ear-reposicao-1.0.ear .
+
+CMD ["/home/rodrigo/Application Servers/wildfly15/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
