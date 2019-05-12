@@ -8,6 +8,9 @@ COPY pom.xml .
 COPY ear ear
 COPY ejb ejb
 COPY web web
+COPY ear-reposicao ear-reposicao
+COPY ejb-reposicao ejb-reposicao
+COPY web-reposicao web-reposicao
 
 
 RUN ./mvnw install -DskipTests
